@@ -25,5 +25,5 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="bg-black fixed" data-spy="scroll" data-target="#scrollspy">
+<body class="bg-orange-active fixed" data-spy="scroll" data-target="#scrollspy">
     <div class="wrapper">

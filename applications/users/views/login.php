@@ -25,7 +25,7 @@
 <div class="col-xs-4">
 <input type="hidden" name="stoken" value="<?=$c?>"/>
 <input type="hidden" name="<?=$csrf['name']?>" value="<?=$csrf['hash']?>" />
-<button type="submit" class="btn btn-warning btn-block btn-flat">Sign In</button>
+<button type="submit" class="btn btn-block btn-flat">Sign In</button>
 </div><!-- /.col -->
 </div>
 </form>
