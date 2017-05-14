@@ -84,35 +84,12 @@
           <ul class="nav sidebar-menu">
             <li class="header">ADMIN MENU</li>
             <li class="<?php echo ($modules == 'Dashboard' || $modules == '') ? 'active':''; ?>"><a href="<?=REALPATH?>admin"><i class="fa fa-dashboard"></i> Dashboard <i class="fa fa-angle-left pull-right"></i></a></li>
-            <li class="<?php echo ($modules == 'Persyaratan') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/persyaratan"><i class="fa fa-files-o"></i> Persyaratan <i class="fa fa-angle-left pull-right"></i></a></li>
-            <li class="<?php echo ($modules == 'Jadwal Pelaksanaan') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/jadwal"><i class="fa fa-files-o"></i> Jadwal Pelaksanaan <i class="fa fa-angle-left pull-right"></i></a></li>
-            <li class="<?php echo ($modules == 'Pengumuman') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/pengumuman"><i class="fa fa-files-o"></i> Pengumuman <i class="fa fa-angle-left pull-right"></i></a></li>
-            <li class="<?php echo ($modules == 'Tata Cara Daftar') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/tata-cara-daftar"><i class="fa fa-files-o"></i> Tata Cara Daftar <i class="fa fa-angle-left pull-right"></i></a></li>
-            <li class="treeview" id="scrollspy-components">
-              <a href="javascript::;"><i class="fa fa-cogs"></i> Pendaftar <i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="nav treeview-menu">
-                <li class="<?php echo ($modules == 'Pendaftar') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/pendaftar"><i class="fa fa-user-plus"></i> Semua <i class="fa fa-angle-left pull-right"></i></a></li>
-                <li class="<?php echo ($modules == 'Pendaftar') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/pendaftar/lolos"><i class="fa fa-user-plus"></i> Lolos <i class="fa fa-angle-left pull-right"></i></a></li>
-                <li class="<?php echo ($modules == 'Pendaftar') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/pendaftar/tidaklolos"><i class="fa fa-user-plus"></i> Tidak <i class="fa fa-angle-left pull-right"></i></a></li>
-              </ul>
-            </li>
-            <li class="<?php echo ($modules == 'Dokumen Lampiran') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/lampiran"><i class="fa fa-user-plus"></i> Dokumen Lampiran <i class="fa fa-angle-left pull-right"></i></a></li>
+            <li class="<?php echo ($modules == 'Project') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/project"><i class="fa fa-files-o"></i> Project <i class="fa fa-angle-left pull-right"></i></a></li>
+            <li class="<?php echo ($modules == 'Investor') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/jadwal"><i class="fa fa-files-o"></i> Investor <i class="fa fa-angle-left pull-right"></i></a></li>
             
             <li class="treeview" id="scrollspy-components">
               <a href="javascript::;"><i class="fa fa-cogs"></i> Settings <i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="nav treeview-menu">
-                <li class="<?php echo ($modules == 'Formasi Jabatan') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/formasi-jabatan"><i class="fa fa-sitemap"></i> Formasi Jabatan <i class="fa fa-angle-left pull-right"></i></a></li>
-                <li class="<?php echo ($modules == 'Jenis Jabatan') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/jenis-jabatan"><i class="fa fa-bookmark"></i> Jenis Jabatan <i class="fa fa-angle-left pull-right"></i></a></li>
-                <li class="<?php echo ($modules == 'Jenis Dokumen') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/jenis-dokumen"><i class="fa fa-file"></i> Jenis Dokumen <i class="fa fa-angle-left pull-right"></i></a></li>
-                <li class="<?php echo ($modules == 'Users') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/users"><i class="fa fa-user"></i> User <i class="fa fa-angle-left pull-right"></i></a></li>
-                <li class="<?php echo ($modules == 'Groups') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/groups"><i class="fa fa-users"></i> Group <i class="fa fa-angle-left pull-right"></i></a></li>
-                <li class="<?php echo ($modules == 'Users Groups') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/users-groups"><i class="fa fa-puzzle-piece"></i> Users Group <i class="fa fa-angle-left pull-right"></i></a></li>
-                <li class="<?php echo ($modules == 'Agama') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/agama"><i class="fa fa-puzzle-piece"></i> Agama <i class="fa fa-angle-left pull-right"></i></a></li>
-                <li class="<?php echo ($modules == 'Tingkat Pendidikan') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/tingkat-pendidikan"><i class="fa fa-puzzle-piece"></i> Tingkat Pendidikan <i class="fa fa-angle-left pull-right"></i></a></li>
-              </ul>
             </li>
-            
-            <!--<li><a href="<?=REALPATH?>admin/file-upload"><i class="fa fa-folder"></i> File Upload <i class="fa fa-angle-left pull-right"></i></a></li>-->
           </ul>
         </div>
         <!-- /.sidebar -->
