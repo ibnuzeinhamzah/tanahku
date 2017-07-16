@@ -324,7 +324,7 @@ class Db_To_Form
 	{
 		$text = (isset($field['text'])) ? $field['text'] : $field_name;
 		$placeholder = ($value == "") ? $text : $value;
-		$forms .= '<input type="text" class="form-control input-sm" ';
+		$forms = '<input type="text" class="form-control input-sm" ';
 		if(isset($field['readonly']) && $field['readonly'] == true) $forms .= 'readonly="readonly" ';
 		$forms .= 'name="'.$field_name.'" id="'.$field_name.'" placeholder="'.$placeholder.'" value="'.$value.'">';
 		return $forms;
@@ -398,7 +398,13 @@ class Db_To_Form
 		$v = '<select name="'.$fieldname.'" class="form-control input-sm">';
 		for($i=0;$i<count($data);$i++){ 
 			$selected = ($value == $data[$i]->$fkey['value']) ? "selected" : "";
-			$v .= '<option value="'.$data[$i]->$fkey['value'].'" '.$selected.'>'.$data[$i]->$fkey['text'].'</option>'; 
+			$v .= '<option value="'.$data[$i]->$fkey['value'].'" '.$selected.'>';
+			if (is_array($fkey['text'])) {
+				for($j=0;$j<count($fkey['text']);$j++) $v .= $data[$i]->$fkey['text'][$j] . ' ';
+			} else {
+				$v .= $data[$i]->$fkey['text'];
+			}
+			$v .= '</option>'; 
 		}
 		$v .= '</select>';
 		return $v;
@@ -464,12 +470,19 @@ class Db_To_Form
 		$v = '<div>';
 		if (count($data) > 0) {
 			if(is_array($fkey['text'])){
-				for($j=0;$j<count($fkey['text']);$j++) $v .= $data[0]->$fkey['text'][$j].' ';
+				for($j=0;$j<count($fkey['text']);$j++) $v .= $this->get_value_fkey_value($data[0],$fkey['text'][$j]); //$data[0]->$fkey['text'][$j].' ';
 			}else{ 
-				$v .= $data[0]->$fkey['text'];
+				$v .= $this->get_value_fkey_value($data[0],$fkey['text']);//$data[0]->$fkey['text'];
 			}
 		}
 		$v .= '</div>';
+		return $v;
+	}
+
+	function get_value_fkey_value($data,$d){
+		$v = '';
+		if (!is_array($d)) $d = [$d];
+		for($j=0;$j<count($d);$j++) $v .= $data->$d[$j];
 		return $v;
 	}
 	/*

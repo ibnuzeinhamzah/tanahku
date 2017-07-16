@@ -220,11 +220,11 @@ class Auth extends CI_Controller
 
 	function set_realpath()
 	{
-		$j = $this->uri->total_segments();
-		$realpath = "";
-		for($i=2;$i<=$j;$i++) $realpath .= "../";
-		if($this->uri->total_segments() >= 1 && substr($_SERVER['REQUEST_URI'],-1) == "/") $realpath .= "../";
-		define('REALPATH',$realpath);
+		// $j = $this->uri->total_segments();
+		// $realpath = "";
+		// for($i=2;$i<=$j;$i++) $realpath .= "../";
+		// if($this->uri->total_segments() >= 1 && substr($_SERVER['REQUEST_URI'],-1) == "/") $realpath .= "../";
+		define('REALPATH',base_url());
 	}
 
 	function get_field_id()

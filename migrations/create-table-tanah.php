@@ -1,0 +1,11 @@
+CREATE TABLE tanah ( 
+    id INT(15) NOT NULL AUTO_INCREMENT, 
+    id_pemilik INT(15) NOT NULL,
+    no_shm VARCHAR(200) NOT NULL, 
+    alamat TEXT NULL, 
+    nilai DOUBLE NULL, 
+    active BOOLEAN NOT NULL DEFAULT TRUE, 
+    PRIMARY KEY (id)
+) ENGINE = InnoDB;
+
+ALTER TABLE tanah ADD COLUMN luas DOUBLE;

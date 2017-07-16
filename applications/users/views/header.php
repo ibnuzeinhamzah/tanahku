@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lelang Jabatan BAPPENAS</title>
+	<title>Tanahku</title>
   <link rel="stylesheet" href="<?=REALPATH.ASSETS_DIR?>/admin/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?=REALPATH.ASSETS_DIR?>/stylesheets/font-awesome.min.css">
   <link rel="stylesheet" href="<?=REALPATH.ASSETS_DIR?>/stylesheets/ionicons.min.css">
@@ -30,7 +30,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand mobile-only tablet-only" href="/">Lelang Jabatan BAPPENAS</a>
+        <a class="navbar-brand mobile-only tablet-only" href="/">Tanahku</a>
       </div>
       <div class="col-md-3">
         <img src="<?=REALPATH.ASSETS_DIR?>/images/logo-header-small.png" class="desktop-only" style="position:absolute;float:left;left:20px;top:10px;" />
@@ -39,28 +39,10 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right header-nav">
             <li class="<?=($modules=='Dashboard')?'active':''; ?>"><a href="<?=REALPATH?>users">Home</a></li>
-            <li class="<?=($modules=='Pilih Formasi Jabatan')?'active':''; ?>"><a href="<?=REALPATH?>users/pilih-formasi-jabatan">Pilihan<br/>Formasi</a></li>
-            <li class="<?=($modules=='Data Pribadi')?'active':''; ?>"><a href="<?=REALPATH?>users/data-pribadi">Data<br/>Pribadi</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Riwayat<br/>Pendidikan <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="<?=($modules=='Riwayat Pendidikan')?'active':''; ?>"><a href="<?=REALPATH?>users/riwayat-pendidikan">Pendidikan Formil</a></li>
-                <li class="<?=($modules=='Riwayat Diklat')?'active':''; ?>"><a href="<?=REALPATH?>users/riwayat-diklat">Pendidikan dan Latihan</a></li>
-              </ul>
-            </li>
-            <li class="<?=($modules=='Riwayat Jabatan')?'active':''; ?>"><a href="<?=REALPATH?>users/riwayat-jabatan">Riwayat<br/>Jabatan</a></li>
-            <li class="<?=($modules=='Riwayat Kepangkatan')?'active':''; ?>"><a href="<?=REALPATH?>users/riwayat-kepangkatan">Riwayat<br/>Kepangkatan</a></li>
+            <li class="<?=($modules=='Pilih Formasi Jabatan')?'active':''; ?>"><a href="<?=REALPATH?>users/pilih-formasi-jabatan">Profile</a></li>
+            <li class="<?=($modules=='Data Pribadi')?'active':''; ?>"><a href="<?=REALPATH?>users/data-pribadi">Investasiku</a></li>
+            <li class="<?=($modules=='Data Pribadi')?'active':''; ?>"><a href="<?=REALPATH?>users/data-pribadi">Open Project</a></li>
             
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data<br/>Lainnya <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="<?=($modules=='Riwayat Penugasan')?'active':''; ?>"><a href="<?=REALPATH?>users/riwayat-penugasan">Riwayat Penugasan Lain</a></li>
-                <li class="<?=($modules=='Prestasi')?'active':''; ?>"><a href="<?=REALPATH?>users/riwayat-prestasi">Prestasi</a></li>
-                <li class="<?=($modules=='Karya Tulis')?'active':''; ?>"><a href="<?=REALPATH?>users/karya-tulis">Karya Tulis / Publikasi</a></li>
-              </ul>
-            </li>
-
-            <li class="<?=($modules=='Upload Dokumen')?'active':''; ?>"><a href="<?=REALPATH?>users/upload-dokumen">Upload<br/>Dokumen</a></li>
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <i class="glyphicon glyphicon-user"></i>

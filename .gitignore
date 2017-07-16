@@ -1,10 +1,12 @@
-assets/pendaftar
-assets/lampiran
 user_guide
 
 applications/admin/config/database.php
 applications/frontend/config/database.php
 applications/users/config/database.php
+
+applications/admin/config/database*
+applications/frontend/config/database*
+applications/users/config/database*
 
 applications/admin/cache/
 applications/frontend/cache/

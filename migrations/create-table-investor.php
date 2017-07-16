@@ -1,0 +1,8 @@
+CREATE TABLE investor ( 
+    id INT(15) NOT NULL AUTO_INCREMENT, 
+    nama VARCHAR(150) NOT NULL,
+    alamat TEXT NOT NULL,
+    no_ktp VARCHAR(50) NULL, 
+    active BOOLEAN NOT NULL DEFAULT TRUE, 
+    PRIMARY KEY (id)
+) ENGINE = InnoDB;

@@ -1,45 +1,53 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-<div class="col-md-12 footer">
+
+<footer class="bg-dark-grey">
   <div class="container">
-    <footer class="main-footer">
-      <div class="hidden-xs">
-        <img src="<?=REALPATH.ASSETS_DIR?>/images/logo-footer.png" style="float:left;margin-right:10px;margin-top:-16px;">
+    <div class="row">
+      <div class="col-md-2">
+        <h3>About Us</h3>
+        <a href="<?=REALPATH?>faq">Our Story</a><br>
+        <a href="<?=REALPATH?>how_it_works">How It Works</a>
       </div>
-      <p>
-        <strong>Badan Perencanaan Pembangunan Nasional</strong><br/>
-        <strong>Copyright &copy; 2015.</strong> All rights reserved.
-      </p>
-    </footer>
+      
+      <div class="col-md-2">
+        <h3>Help</h3>
+        <a href="<?=REALPATH?>faq#faq">FAQ</a><br>
+        <a href="<?=REALPATH?>terms#terms_of_investment">Terms of Investment</a><br>
+        <!-- <a href="<?=REALPATH?>terms">Terms of Use</a><br> -->
+        <a href="<?=REALPATH?>terms#privacy_policy">Privacy Policy</a>
+      </div>
+      <div class="col-md-4">
+        <h3>Our Open Projects</h3>        
+        <div class="row">                   
+          <!-- <a class="col-md-6" href="<?=REALPATH?>detail_type_seed/1">Olive</a>                   
+          <a class="col-md-6" href="<?=REALPATH?>detail_type_seed/2">Date Palm</a>
+          <a class="col-md-6" href="<?=REALPATH?>detail_type_seed/8">Durian</a>
+          <a class="col-md-6" href="<?=REALPATH?>detail_type_seed/9">Longan</a>
+          <a class="col-md-6" href="<?=REALPATH?>detail_type_seed/11">Peanut</a>
+          <a class="col-md-6" href="<?=REALPATH?>detail_type_seed/12">Banana</a>
+          <a class="col-md-6" href="<?=REALPATH?>detail_type_seed/13">Deli Water Apple</a>
+          <a class="col-md-6" href="<?=REALPATH?>detail_type_seed/14">Vetiver</a> -->
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>Contact Us</h3>
+        PT Tanahku<br>
+        <br>
+        <a href="mailto:info@tanahku.asia">info@tanahku.asia</a><br>
+        <br><br>
+
+        <!-- <ul class="social-network social-circle">
+          <li><a target="_blank" href="http://facebook.com/igrowclub" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a target="_blank" href="http://twitter.com/iGrowAsia" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a target="_blank" href="https://plus.google.com/u/0/110143162279308681530" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+          <li><a target="_blank" href="http://linkedin.com/company/7593287" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCCe0Kdz-z9Y4Zpkru71YfcA" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+        </ul>    -->
+      </div>
+    </div>
   </div>
 </div>
-<!-- jQuery 2.1.4 -->
-<script src="<?=REALPATH.ASSETS_DIR?>/admin/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-<!-- Bootstrap 3.3.5 -->
-<script src="<?=REALPATH.ASSETS_DIR?>/admin/bootstrap/js/bootstrap.min.js"></script>
-<!-- FastClick -->
-<script src="<?=REALPATH.ASSETS_DIR?>/admin/plugins/fastclick/fastclick.min.js"></script>
-<script src="<?=REALPATH.ASSETS_DIR?>/admin/dist/js/app.min.js"></script>
-<script src="<?=REALPATH.ASSETS_DIR?>/admin/plugins/iCheck/icheck.min.js"></script>
+</footer>
 
-<?php if(in_array($modules,array("Data Pribadi","Riwayat Pendidikan","Riwayat Kepangkatan","Riwayat Jabatan","Dokumen Pendukung"))){ ?>
-<script src="<?=REALPATH.ASSETS_DIR?>/admin/plugins/input-mask/jquery.inputmask.js"></script>
-<script src="<?=REALPATH.ASSETS_DIR?>/admin/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="<?=REALPATH.ASSETS_DIR?>/admin/plugins/input-mask/jquery.inputmask.phone.extensions.js"></script>
-<script src="<?=REALPATH.ASSETS_DIR?>/admin/plugins/input-mask/jquery.inputmask.extensions.js"></script>
-<script>
-  $(function () {
-    $("[data-mask]").inputmask();
-  });
-</script>
-<?php } ?>
-<script>
-  $(function () {
-    $('input').iCheck({
-      checkboxClass: 'icheckbox_square-blue',
-      radioClass: 'iradio_square-blue',
-      increaseArea: '20%' // optional
-    });
-  });
-</script>
 </body>
 </html>

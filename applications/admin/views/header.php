@@ -84,8 +84,11 @@
           <ul class="nav sidebar-menu">
             <li class="header">ADMIN MENU</li>
             <li class="<?php echo ($modules == 'Dashboard' || $modules == '') ? 'active':''; ?>"><a href="<?=REALPATH?>admin"><i class="fa fa-dashboard"></i> Dashboard <i class="fa fa-angle-left pull-right"></i></a></li>
+            <li class="<?php echo ($modules == 'Project') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/pemiliktanah"><i class="fa fa-files-o"></i> Pemilik Tanah <i class="fa fa-angle-left pull-right"></i></a></li>
+            <li class="<?php echo ($modules == 'Project') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/tanah"><i class="fa fa-files-o"></i> Tanah <i class="fa fa-angle-left pull-right"></i></a></li>
             <li class="<?php echo ($modules == 'Project') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/project"><i class="fa fa-files-o"></i> Project <i class="fa fa-angle-left pull-right"></i></a></li>
-            <li class="<?php echo ($modules == 'Investor') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/jadwal"><i class="fa fa-files-o"></i> Investor <i class="fa fa-angle-left pull-right"></i></a></li>
+            <li class="<?php echo ($modules == 'Investor') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/investor"><i class="fa fa-files-o"></i> Investor <i class="fa fa-angle-left pull-right"></i></a></li>
+            <li class="<?php echo ($modules == 'Investor') ? 'active':''; ?>"><a href="<?=REALPATH?>admin/investasi"><i class="fa fa-files-o"></i> Investasi <i class="fa fa-angle-left pull-right"></i></a></li>
             
             <li class="treeview" id="scrollspy-components">
               <a href="javascript::;"><i class="fa fa-cogs"></i> Settings <i class="fa fa-angle-left pull-right"></i></a>

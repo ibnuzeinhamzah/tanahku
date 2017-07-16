@@ -9,7 +9,7 @@
 	font-weight:normal;
 	font-style:normal
 }
-body { padding-top: 100px; padding-bottom: 30px; color:#ffffff !important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; overflow-x: hidden; overflow-y: auto; background-color: #01508E; }
+body { padding-top: 100px; padding-bottom: 30px; color:#ffffff !important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; overflow-x: hidden; overflow-y: auto; background-color: #cccccc; }
 p { font-size: 0.8em !important; text-align: justify;}
 .theme-dropdown .dropdown-menu { position: static; display: block; margin-bottom: 20px; }
 .theme-showcase > p > .btn { margin: 5px 0; }
